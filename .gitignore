@@ -1,18 +1,32 @@
 # Build and Release Folders
-bin/
-bin-debug/
-bin-release/
-[Oo]bj/ # FlashDevelop obj
-[Bb]in/ # FlashDevelop bin
+.idea/*
 
-# Other files and folders
-.settings/
+#Documentacion
+doc/*
+
+#Scripts SQL
+*.sql
+
+# Carpetas de Imagenes
+site_design/img/faces/fullscreen
+site_design/img/faces/thumbnail
+
+#Imagenes y Documentos Adjuntos a los modulos
+modules/01HelpDesk/Adjuntos
+modules/02Proyectos/Adjuntos
+modules/04PVenta/Adjuntos
+modules/07Mantenimiento/adjuntos
+modules/applications/Adjuntos
+modules/applications/logs
+modules/applications/storage
+modules/Surveys
+
+#Carpetas .RAR y .ZIP
+*.rar
+*.zip
 
 # Executables
-*.swf
-*.air
-*.ipa
-*.apk
+*.exe
 
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
 # should NOT be excluded as they contain compiler settings and other important
