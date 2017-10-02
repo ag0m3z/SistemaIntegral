@@ -1,0 +1,147 @@
+.skin-vino .main-header .navbar {
+    background-color: #793240;
+}
+.skin-vino .main-header .navbar .nav > li > a {
+    color: #ffffff;
+}
+.skin-vino .main-header .navbar .nav > li > a:hover,
+.skin-vino .main-header .navbar .nav > li > a:active,
+.skin-vino .main-header .navbar .nav > li > a:focus,
+.skin-vino .main-header .navbar .nav .open > a,
+.skin-vino .main-header .navbar .nav .open > a:hover,
+.skin-vino .main-header .navbar .nav .open > a:focus,
+.skin-vino .main-header .navbar .nav > .active > a {
+    background: rgba(0, 0, 0, 0.1);
+    color: #f6f6f6;
+}
+.skin-vino .main-header .navbar .sidebar-toggle {
+    color: #ffffff;
+}
+.skin-vino .main-header .navbar .sidebar-toggle:hover {
+    color: #f6f6f6;
+    background: rgba(0, 0, 0, 0.1);
+}
+.skin-vino .main-header .navbar .sidebar-toggle {
+    color: #fff;
+}
+.skin-vino .main-header .navbar .sidebar-toggle:hover {
+    background-color: #793240;
+}
+@media (max-width: 767px) {
+    .skin-vino .main-header .navbar .dropdown-menu li.divider {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    .skin-vino .main-header .navbar .dropdown-menu li a {
+        color: #fff;
+    }
+    .skin-vino .main-header .navbar .dropdown-menu li a:hover {
+        background: #793240 !important;
+    }
+}
+.skin-vino .main-header .logo {
+    background-color: #793240;
+    color: #ffffff;
+    border-bottom: 0 solid transparent;
+}
+.skin-vino .main-header .logo:hover {
+    background-color: #55232d;
+}
+.skin-vino .main-header li.user-header {
+    background-color: #793240;
+}
+.skin-vino .wrapper,
+.skin-vino .main-sidebar,
+.skin-vino .left-side {
+    background-color: #F9FAFC;
+}
+
+.skin-vino .sidebar-menu > li > a {
+    border-left: 3px solid transparent;
+    border-top: 1px solid #fcfcfc;
+    border-bottom: 1px solid #793240 !important;
+    border-left: none;
+    color: #222;
+    display: block;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1em;
+    padding: .58em .01em .58em 1em;
+    margin-bottom: 0px;
+    text-shadow: none;
+    text-transform: none;
+    background: #efeff0;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #efeff0), color-stop(1, #ffffff));
+    background: -ms-linear-gradient(bottom, #efeff0, #ffffff);
+    background: -moz-linear-gradient(center bottom, #efeff0 0%, #ffffff 100%);
+    background: -o-linear-gradient(bottom, #efeff0, #ffffff);
+    filter: progid:dximagetransform.microsoft.gradient(startColorStr='#e3e3e3', EndColorStr='#ffffff');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff',EndColorStr='#efeff0')";
+    /*Change the arrow direction if the item is collapsed*/
+}
+
+/*.sidebar-menu ul.treeview-menu> li:before{*/
+/*background: #3E5367;*/
+/*bottom: auto;*/
+/*content: "";*/
+/*height: 8px;*/
+/*left: 9px;*/
+/*margin-top: 10px;*/
+/*position: absolute;*/
+/*right: auto;*/
+/*width: 8px;*/
+/*z-index: 0 !important;*/
+/*-webkit-border-radius: 50%;*/
+/*-moz-border-radius: 50%;*/
+/*border-radius: 50%;*/
+/*}*/
+.sidebar-menu ul.treeview-menu> li:after {
+    border-left: 1px solid #425668;
+    bottom: 0;
+    content: "";
+    left: 4px;
+    position: absolute;
+    top: 0;
+    top:32px;
+
+}
+.sidebar-menu .treeview .fa {
+    color: #55232d ;
+}
+.sidebar-menu .treeview-menu .fa {
+    color: #793240 ;
+}
+.sidebar-menu .treeview-menu a:hover .fa{
+    color: #fff ;
+}
+
+.skin-vino .sidebar-menu > li:hover > a,
+.skin-vino .sidebar-menu > li.active > a {
+    color: #222;
+    border-left-color: #793240;
+    text-decoration: underline;
+}
+.skin-vino .sidebar-menu > li > .treeview-menu {
+    margin: 0px;
+    background: rgba(219, 227, 236, 0.54);
+}
+.skin-vino .sidebar a {
+    color: #fff;
+}
+.skin-vino .sidebar a:hover {
+    text-decoration: none;
+}
+.skin-vino .treeview-menu > li > a {
+    color: #793240;
+}
+.skin-vino .treeview-menu > li > a:hover {
+    color: #ffffff;
+    background: #793240;
+}
+.skin-vino.layout-top-nav .main-header > .logo {
+    background-color: #793240;
+    color: #ffffff;
+    border-bottom: 0 solid transparent;
+}
+.skin-vino.layout-top-nav .main-header > .logo:hover {
+    background-color: #3b8ab8;
+}
