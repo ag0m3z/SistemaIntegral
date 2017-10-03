@@ -43,7 +43,6 @@ function getlongPollingChat(timestamp)
         success: function(res)
         {
             getlongPollingChat(res.timestamp);
-            console.log(res.notificaciones);
 
             $(".bellMensajes").text(res.notificaciones);
             if(res.notificaciones > 0){
@@ -1098,7 +1097,7 @@ function fnCatFrmNuevoDepartamento(opcion,nodpto,listar){
 }
 
 //Funcion para cerrar los modales con confirmacion
-function fnsdcerrarModal(idModal,confirm=true){
+function fnsdcerrarModal(idModal,confirm){
 
 
 
@@ -1367,7 +1366,7 @@ function jsgn_close_system(NoUsuario) {
 }
 
 // funcion para mostrar notificaciones
-function getMessageNotify (pTitle,messages,typemsg,timer = 0){
+function getMessageNotify (pTitle,messages,typemsg,timer){
 
     if(timer<1){
         timer = 3500;

@@ -17,10 +17,16 @@ $connect->valida_session_id();
 <script>
     setOpenModal("mdlMensajeria");
 
-    if($(".bellMensajes").text() > 0){
-        fnBuscarContactoChat(2);
+    if(<?=$_POST['opc']?> != 4 ){
+        if($(".bellMensajes").text() > 0){
+            // Mensajes sin leer
+            fnBuscarContactoChat(2);
+        }else{
+            //Los mensajes mas recientes
+            fnBuscarContactoChat(3);
+        }
     }else{
-        fnBuscarContactoChat(3);
+
     }
 
     $("#searchContact").on('keyup',function(e){
@@ -48,7 +54,6 @@ $connect->valida_session_id();
                 </h4>
             </div>
             <div id="collapse-body-chat" class="modal-body no-padding"  style="height:34.43vmax;" >
-
                 <div class="row hidden">
                     <div class="col-md-12 ">
                        <div class="bg-light-blue-gradient wrapper">
@@ -60,9 +65,24 @@ $connect->valida_session_id();
                 <div class="row row-sm">
                     <div class="col-md-4 ">
 
-                        <div class=" hidden toolbars">
-                            <button class="btn btn-link btn-xs"><i class="fa fa-gears"></i></button>
-                            <button class="btn btn-link btn-xs"><i class="fa fa-user-md"></i></button>
+                        <div style="background: #c8c8cb;">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-link btn-sm text-black dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-comment"></i> Mensajes <span class="bellMensajes small badge"></span> </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li onclick="fnBuscarContactoChat(3)"><a href="#"><i class="fa fa-list-ul"></i> Recientes</a></li>
+                                    <li onclick="fnBuscarContactoChat(2)"><a href="#"><i class="fa fa-commenting"></i> Sin Leer </a></li>
+                                </ul>
+                            </div>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-link btn-sm text-black dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-users"></i> Grupos <span class="caret"></span></button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#"><i class="fa fa-users"></i> Nuevo</a></li>
+                                    <li><a href="#"><i class="fa fa-list-ol"></i> Mis Grupos</a></li>
+                                    <li><a href="#"><i class="fa fa-th-list"></i> Todos</a></li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="">
                             <div class="input-group">
@@ -73,11 +93,10 @@ $connect->valida_session_id();
                             </div>
                         </div>
 
-                        <div class="padding-x5 scroll-auto sidebar" style="background:  rgba(214,237,250,0.42);height: 64vh">
+                        <div class="padding-x5 scroll-auto sidebar" style="background:  rgba(214,237,250,0.42);height: 60vh">
 
-                            <div>
+                            <div class="hidden">
                                 <button onclick="fnBuscarContactoChat(3)" class="btn btn-info btn-xs">Recientes</button>
-                                <button onclick="fnBuscarContactoChat(2)" class="btn btn-warning btn-xs">Sin leer <span class="badge bellMensajes"></span> </button>
                             </div>
                             <div id="titulo_lista" class="">
                                 Top 10 - Contactos recientes
@@ -89,7 +108,7 @@ $connect->valida_session_id();
                         </div>
 
                     </div>
-                    <div class="col-md-8 padding-x3"  style="border-left: 1px solid rgba(230,230,230,0.98);">
+                    <div class="col-md-8 padding-x3"  style="border-left: 1px solid rgba(244,247,250,0.6);">
 
 
                         <div id="chatHome">

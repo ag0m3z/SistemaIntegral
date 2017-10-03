@@ -25,7 +25,12 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
         $NoUsuario = $_SESSION['data_login']['NoUsuario'];
         $Mensaje = $_POST['Mensaje'];
 
-        $connect->_query = "INSERT INTO SINTEGRALPRD.BGEMensajes VALUES (null,'$NoUsuario','$NoUsuarioRecive','$Mensaje',1,now())";
+        $TipoMensaje = $_POST['TipoMensaje'];
+        $RutaImagen = $_POST['RutaImagen'];
+        $NombreImagen = $_POST['NombreImagen'];
+        $NombreUnico = $_POST['NombreUnico'];
+
+        $connect->_query = "INSERT INTO SINTEGRALPRD.BGEMensajes VALUES (null,'$TipoMensaje','$NoUsuario','$NoUsuarioRecive','$Mensaje','$RutaImagen','$NombreImagen','$NombreUnico',1,now())";
         $connect->execute_query();
 
         $connect->_query = "SELECT MAX(Fecha) FROM SINTEGRALPRD.BGEMensajes WHERE NoUsuarioRecive = $NoUsuarioRecive";

@@ -46,7 +46,8 @@ if($_SERVER['REQUEST_METHOD'] == "GET"){
               a.Mensaje,
               DATE_FORMAT(date(a.Fecha),'%d/%m/%Y')as Fecha,
               DATE_FORMAT(time(a.Fecha),  '%h:%i%p')as Hora,
-              a.Fecha
+              a.Fecha,a.RutaImagen,a.NombreImagen,a.NombreUnico,
+          a.TipoMensaje
                       FROM 
              SINTEGRALPRD.BGEMensajes as a 
             LEFT JOIN SINTEGRALGNL.BGECatalogoUsuarios as b 

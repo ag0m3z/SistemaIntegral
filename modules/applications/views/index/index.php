@@ -43,6 +43,7 @@ $seguridad->valida_session_id($_SESSION['data_login']['NoUsuario']);
     <div id="idgeneral"></div>
     <div id="idgeneral2"></div>
     <div id="chat"></div>
+    <div id="imgchat"></div>
     <?php include "modules/applications/layout/master_page/pie_de_pagina.inc" ;  ?>
     <?php include "modules/applications/layout/master_page/menu_right.inc" ;?>
 
